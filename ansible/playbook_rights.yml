@@ -1,0 +1,19 @@
+---
+- name: Changing permissions
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Chage folder
+    ansible.builtin.file:
+      path: /var/www/html
+      owner: ubuntu
+      group: ubuntu
+      mode: g+rw
+
+  - name: Change folder file
+    ansible.builtin.file:
+      path: /var/www/html/index.html
+      owner: ubuntu
+      group: ubuntu
+      mode: g+rw
