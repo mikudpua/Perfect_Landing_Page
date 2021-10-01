@@ -1,0 +1,9 @@
+---
+- name: Java
+  hosts: all
+  become: yes
+
+  tasks:
+
+  - name: Java
+    apt: name=openjdk-11-jre-headless state=latest

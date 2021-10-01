@@ -1,0 +1,8 @@
+---
+- name: update ubuntu
+  hosts: all
+  become: yes
+
+  roles:
+    - deploy_apache2
+    - rights_folder

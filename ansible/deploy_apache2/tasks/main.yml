@@ -1,0 +1,10 @@
+---
+# tasks file for deploy_apache2
+- name: update ubuntu
+  apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
+
+- name: install Apache WebServer
+  apt: name=apache2 state=latest
+
+- name: Start Apache and Enable it on the every boot
+  service: name=apache2 state=started enabled=yes

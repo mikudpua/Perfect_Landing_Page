@@ -1,0 +1,4 @@
+---
+# defaults file for rights_folder
+folder_web: /var/www/html/
+file_index: /var/www/html/index.html

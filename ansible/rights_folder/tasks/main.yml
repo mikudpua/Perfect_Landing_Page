@@ -1,0 +1,15 @@
+---
+# tasks file for rights_folder
+- name: Chage folder
+  ansible.builtin.file:
+    path: "{{ folder_web }}"
+    owner: ubuntu
+    group: ubuntu
+    mode: g+rw
+
+- name: Change folder file
+  ansible.builtin.file:
+    path: "{{ file_index}}"
+    owner: ubuntu
+    group: ubuntu
+    mode: g+rw

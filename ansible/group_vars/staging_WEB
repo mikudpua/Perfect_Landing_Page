@@ -1,3 +1,4 @@
+
 ---
-ansible_user                 : ubuntu
-ansible_ssh_private_key_file : /home/miku/.ssh/
+ansible_user                 : ubuntu 
+ansible_ssh_private_key_file : /home/miku/.ssh/miku-virginia-key.pem
