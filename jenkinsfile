@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages {
+        stage(build) {
+            steps {
+                git branch: 'main', credentialsId: 'jenkins', url: 'git@github.com:mikudpua/Leading_page.git'
+                sh 'ls -la'
+            }
+        }
+        stage(deploy){
+            agent{
+                label 'web_ubuntu'
+            }
+            steps{
+                git branch: 'main', credentialsId: 'jenkins', url: 'git@github.com:mikudpua/Leading_page.git'
+                sh 'ls -la'
+                sh 'scp index.html /var/www/html'
+                sh 'scp -r w3images /var/www/html'
+                
+            }
+        }
+    }
+}

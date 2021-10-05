@@ -1,0 +1,14 @@
+---
+- name: update
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: update ubuntu
+    apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
+
+  - name: install_jdk
+    apt: name=default-jdk
+
+  - name: install_jre
+    apt: name=default-jre
