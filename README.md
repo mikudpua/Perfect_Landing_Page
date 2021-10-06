@@ -10,21 +10,21 @@
 * Landing Page creation and competent promotion will also successfully generate leads, bring you customers and make a profit,
 
 * The advantages of the Landing Page are:
- > Simplicity. A landing page can be created and launched in a matter of hours, without wasting time and money.
- > High conversion. ...
- > Fast loading. ...
- > Low cost. ...
- > Making changes in minutes 
+ - Simplicity. A landing page can be created and launched in a matter of hours, without wasting time and money.
+ - High conversion. ...
+ - Fast loading. ...
+ - Low cost. ...
+ - Making changes in minutes 
 
 * Project implementation plan. 
 
  1. To create repository with landing pages on github.
  2. Using terraforms, to create a virtual machine on aws, security groups and specify which key (ssh) to use.
  3. Using Ansibl:
- > to check the connection to the virtual machine.
- > update the system.
- > install apache web server.
- > set permissions on var / www / html folder.
+ - to check the connection to the virtual machine.
+ - update the system.
+ - install apache web server.
+ - set permissions on var / www / html folder.
  4. Using Jenkins, to transfer page template from github.com to web server in aws. 
 
 
