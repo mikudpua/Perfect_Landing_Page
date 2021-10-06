@@ -1,7 +1,0 @@
----
-- name: Changing permissions
-  hosts: all
-  become: yes
-
-  roles:
-    - rights_folder
